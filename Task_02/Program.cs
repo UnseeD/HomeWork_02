@@ -5,9 +5,13 @@
 // 32679 -> 6
 
 System.Console.WriteLine("Введите число: ");
-int[] n = int.Parse(Console.ReadLine());
-int c = 0;
+int n = int.Parse(Console.ReadLine());
 if (n < 100)
 {
-    System.Console.WriteLine("Нет третьей цифры.");
+    System.Console.WriteLine("Третьей цифры нет.");
+}
+else if (n > 100 $$ n <1000)
+{
+    int b = n % 10;
+    System.Console.WriteLine($"Третья цифра вашего числа - {b}");
 }
