@@ -15,7 +15,7 @@ else if (n <=999)
     n = n % 10;
     Console.Write($"Искомая цифра: {n}, ");
 }
-while (n > 100)
+while (n >= 999)
 {
     n = n / 10;
     {
