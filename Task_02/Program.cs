@@ -10,8 +10,16 @@ if (n < 100)
 {
     System.Console.WriteLine("Третьей цифры нет.");
 }
-else if (n > 100 $$ n <1000)
+else if (n <=999)
 {
-    int b = n % 10;
-    System.Console.WriteLine($"Третья цифра вашего числа - {b}");
+    n = n % 10;
+    Console.Write($"Искомая цифра: {n}, ");
+}
+while (n > 100)
+{
+    n = n / 10;
+    {
+      n = n % 10;
+    Console.Write($"Искомая цифра: {n}, ");  
+    }
 }
