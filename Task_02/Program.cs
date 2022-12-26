@@ -12,14 +12,12 @@ if (n < 100)
 }
 else if (n <=999)
 {
-    n = n % 10;
-    Console.Write($"Искомая цифра: {n}, ");
+    // n = n % 10;
+    // Console.Write($"Искомая цифра: {n}, ");
 }
 while (n >= 999)
 {
     n = n / 10;
-    {
-      n = n % 10;
-    Console.Write($"Искомая цифра: {n}, ");  
-    }
 }
+n = n % 10;
+Console.Write($"Искомая цифра: {n} ");  
